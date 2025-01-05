@@ -28,7 +28,7 @@ QUOTES = [
     ('Show yourself some respect and stop doing stupid shit that makes you age faster and feel miserable.', 'Bryan Johnson'),
     ("It is not necessary to accept the choices handed down to you by life as you know it. There is more to it than that", 'HST'),
     ("Invest First, Investigate Later", 'George Soros (on equity investing'),
-    ("What’s something you’ve learned that you believe gives you an edge", 'Unknown'),
+    ("Whats something youve learned that you believe gives you an edge", 'Unknown'),
     ("Your worst sin is that you have destroyed and betrayed yourself for nothing", "Dostoyevksy"),
     ("you're a healer main because you want to help people, i'm a healer main because i'm spiteful and don't trust anyone else to do it properly. we are not the same", 'sariel (twitter)'),
     ("When you choose the benefits of an action, you also choose the drawbacks.", 'Unknown'),
