@@ -35,7 +35,7 @@ QUOTES = [
     ("Your willingness to believe something is influenced by how much you want and need it to be true.", 'Unknown'),
     ('To enjoy bodily warmth, some small part of you must be cold, for there is no quality in this world that is not what it is merely by contrast. Nothing exists in itself.', "Moby Dick"),
     ("I believe in the idea that you are the sum total of the 5 people you hang out with. Sotimetimes I don't hang out with good people or even 5 people. Reading is a way of filling that gap.", "Unknown"),
-    ("Someone with half your IQ is making 10x as you because they aren't smart enough to doubt themselves.", 'Ed Latimore (Twitter)'),
+    ("Someone with half your IQ is making 10x as you because they aren't smart enough to doubt themselves.", 'Ed Latimore'),
     ("Solitude is dangerous. It’s very addictive. It becomes a habit after you realize how calm and peaceful it is.", "Jim Carrey"),
     ("Man can not remake himself without suffering for he is both the marble and the sculptor", "Unknown"),
     ("If a decision is reversible, the biggest risk is moving too slow. " + '\n' + " If a decision is irreversible, the biggest risk is moving too fast", "Unknown"),
@@ -44,6 +44,8 @@ QUOTES = [
     ("How can you create an enviroment that will naturally bring about my desired change?", "Unknown"),
     ("Your life is purchased by where you spend attention ", "Unknown"),
     ("Being good in business is the most fascinating kind of art. Making money is art and working is art and good business is the best art.", "Andy Warhol"),
+    ("Habits are the compound interest of self-improvement. A small habit when repeated consistently grows into something significant.", "Unknown")
+    ("Six Most Important Luxuries in life: Time, Health, A Quiet Mind, Slow Mornings, Meaningful Work, A House Full of Love", "Unknown")
 ]
 
 
