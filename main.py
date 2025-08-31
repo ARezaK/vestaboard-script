@@ -19,7 +19,7 @@ import random
 import os
 
 # Constants for API setup
-LOCAL_IP_ADDRESS = '192.168.1.12'
+LOCAL_IP_ADDRESS = '192.168.1.28'
 LOCAL_API_TOKEN = os.environ['LOCAL_API_TOKEN']
 KANYE_API_URL = 'https://api.kanye.rest'
 
@@ -27,25 +27,37 @@ KANYE_API_URL = 'https://api.kanye.rest'
 QUOTES = [
     ('Show yourself some respect and stop doing stupid shit that makes you age faster and feel miserable.', 'Bryan Johnson'),
     ("It is not necessary to accept the choices handed down to you by life as you know it. There is more to it than that", 'HST'),
-    ("Invest First, Investigate Later", 'George Soros (on equity investing'),
+    ("Invest First, Investigate Later", 'George Soros (on equity investing)'),
     ("Whats something youve learned that you believe gives you an edge", 'Unknown'),
     ("Your worst sin is that you have destroyed and betrayed yourself for nothing", "Dostoyevksy"),
-    ("you're a healer main because you want to help people, i'm a healer main because i'm spiteful and don't trust anyone else to do it properly. we are not the same", 'sariel (twitter)'),
+    ("you're a healer main because you want to help people, i'm a healer main because i'm spiteful and don't trust anyone else. we are not the same", 'sariel (twitter)'),
     ("When you choose the benefits of an action, you also choose the drawbacks.", 'Unknown'),
     ("Your willingness to believe something is influenced by how much you want and need it to be true.", 'Unknown'),
-    ('To enjoy bodily warmth, some small part of you must be cold, for there is no quality in this world that is not what it is merely by contrast. Nothing exists in itself.', "Moby Dick"),
-    ("I believe in the idea that you are the sum total of the 5 people you hang out with. Sotimetimes I don't hang out with good people or even 5 people. Reading is a way of filling that gap.", "Unknown"),
+    ('To enjoy bodily warmth, some small part of you must be cold, for there is no quality in this world that is not what it is merely by contrast.', "Moby Dick"),
+    ("You are the sum total of the 5 people you hang out with. Sometimes I don't hang out with good people or even 5 people. Reading is a way of filling that gap.", "Unknown"),
     ("Someone with half your IQ is making 10x as you because they aren't smart enough to doubt themselves.", 'Ed Latimore'),
-    ("Solitude is dangerous. It’s very addictive. It becomes a habit after you realize how calm and peaceful it is.", "Jim Carrey"),
+    ("Solitude is dangerous. It's very addictive. It becomes a habit after you realize how calm and peaceful it is.", "Jim Carrey"),
     ("Man can not remake himself without suffering for he is both the marble and the sculptor", "Unknown"),
-    ("If a decision is reversible, the biggest risk is moving too slow. " + '\n' + " If a decision is irreversible, the biggest risk is moving too fast", "Unknown"),
-    ("The teacher learns more than the student " + "\n" + "The author learns more than the reader" + "\n" + "The speaker learns more than that attending" + "\n" + "The way to learn is by doing", "Unknown"),
+    ("If a decision is reversible, biggest risk is moving too slow. If a decision is irreversible, biggest risk is moving too fast", "Unknown"),
+    ("The older I get the more I realize how many kinds of smart there are. There are lots of kinds of stupid, too", "J. Bezos"),
+    ("The teacher learns more than the student.The author learns more than the reader.The speaker learns more than that attending.The way to learn is by doing", "Unknown"),
     ("Invest in preparedness, not in prediction", 'Nassim Taleb'),
+    ("First step of any meaningful pursuit is to severely underestimate its difficulty", 'Sara Hooker'),
     ("How can you create an enviroment that will naturally bring about my desired change?", "Unknown"),
     ("Your life is purchased by where you spend attention ", "Unknown"),
-    ("Being good in business is the most fascinating kind of art. Making money is art and working is art and good business is the best art.", "Andy Warhol"),
-    ("Habits are the compound interest of self-improvement. A small habit when repeated consistently grows into something significant.", "Unknown")
-    ("Six Most Important Luxuries in life: Time, Health, A Quiet Mind, Slow Mornings, Meaningful Work, A House Full of Love", "Unknown")
+    ("If you don't make time for your wellness you will be forced to make time for your illness", "Unknown"),
+    ("Being good in business is the most fascinating kind of art.", "Andy Warhol"),
+    ("The only real test of intelligence is if you get what you want out of life", "Naval"),
+    ("Habits are the compound interest of self-improvement. A small habit when repeated consistently grows into something significant.", "Unknown"),
+    ("Six Most Important Luxuries in life: Time, Health, A Quiet Mind, Slow Mornings, Meaningful Work, A House Full of Love", "Unknown"),
+    ("You sensed that you should be following a different path, a more ambitious one, you felt that you were destined for other things but you had no idea how to achieve them and in your misery you began to hate everything around you", "Unknown"),
+    ("No Risk, No Rari", "Unknown"),
+    ("You run into an asshole in the morning, you've ran into an asshole. You run into assholes all day, you're the asshole.", "Unknown"),
+    ("You never know what worse luck your bad luck saved you from", "Cormac McCarthy"),
+    ("Take Yourself Seriously - The way the world treats you can be a reflection of how you treat yourself", "Unknown"),
+    ("Better to admit you walked through the wrong door then spend your life in the wrong room", "Unknown"),
+    ("There is usually an inverse relationship between something is on your mind and how much its getting done", "David Allen"),
+    ("If you are distressed by anything external, the pain is only due to your estimate of it. and this you have the power to revoke", "Marcus Aurelius"),
 ]
 
 
@@ -89,6 +101,8 @@ def get_valid_quote() -> Tuple[str, str]:
         print(f"Got Quote: {quote}")
         if len(quote[0]) + len(quote[1]) <= 124:
             return quote  # Return the valid quote if it fits the limit
+        else:
+            print(f"quote is too long: {quote}")
 
 # Main execution logic
 quote = get_valid_quote()
