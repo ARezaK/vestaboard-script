@@ -65,7 +65,10 @@ QUOTES = [
     ("The more disciplined your environment is, the less disciplined you need to be. Don't swim upstreamh", "Unknown"),
     ("Doubt is not an agreeable condition, but certainty is an absurd one", "Voltaire"),
     ("4 most expensive words in American history: This time its different", "Sir John Templeton"),
-    ("The only thing that can stop a bad man with a gun is a good man with a ghost gun", "Brian Waldman")
+    ("The only thing that can stop a bad man with a gun is a good man with a ghost gun", "Brian Waldman"),
+    ("You wont find anyone among people who is perfect, so look for someone whose flaws dont hurt you.", "Unknown"),
+    ("Keep your identity small", "Paul Graham"),
+    ("Invention requires a long-term willingness to be misunderstood.", "Jeff Bezos"),
 ]
 
 
