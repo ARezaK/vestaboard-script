@@ -69,6 +69,8 @@ QUOTES = [
     ("You wont find anyone among people who is perfect, so look for someone whose flaws dont hurt you.", "Unknown"),
     ("Keep your identity small", "Paul Graham"),
     ("Invention requires a long-term willingness to be misunderstood.", "Jeff Bezos"),
+    ("Spannungsbogen - self imposed delay between desire for a thing and the act of reaching out to grab that thing", "Princess Irulan"),
+    ("No more terrible instant of enlightenment than when you discover your father is a man - with human flesh", "Princess Irulan"),
 ]
 
 
@@ -112,6 +114,9 @@ def get_valid_quote() -> Tuple[str, str]:
         print(f"Got Quote: {quote}")
         if len(quote[0]) + len(quote[1]) <= 124:
             return quote  # Return the valid quote if it fits the limit
+        elif len(quote[0]) <= 124:
+            quote[1] = ''
+            return quote
         else:
             print(f"quote is too long: {quote}")
 
